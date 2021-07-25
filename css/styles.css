@@ -1,6 +1,6 @@
-#title{
-    background-color: #ff4c68;
-    color: #fff;
+body{
+    font-family: "montserrat";
+    text-align: center;
 }
 h1{
     font-family: "montserrat-black";
@@ -10,13 +10,27 @@ h1{
 h2{
     font-family: "montserrat-bold";
     size: 5rem;
- line-height: 1.5;
+    line-height: 1.5;
 }
 .container-fluid{
     padding: 3% 15%;
 }
-body{
-    font-family: "montserrat";
+h3{
+    font-family: "montserrat-bold";
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+p{
+    color: #8f8f8f;
+}
+/* title  */
+#title{
+    background-color: #ff4c68;
+    color: #fff;
+}
+.title-img{
+    width: 60%;
+    transform: rotate(25deg);
 }
 /* nav bar */
 .navbar{
@@ -39,11 +53,6 @@ font-weight:bold ;
 .down-btn{
     margin: 5% 3% 5% 0;
 }
-/* title img */
-.title-img{
-    width: 60%;
-    transform: rotate(25deg);
-}
 #features{
     padding: 7% 15%;
     background-color: #fff;
@@ -56,14 +65,6 @@ font-weight:bold ;
 }
 .icon:hover{
     color: #ff4c68;
-}
-h3{
-    font-family: "montserrat-bold";
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-p{
-    color: #8f8f8f;
 }
 .feature-box{
 text-align: center;
@@ -101,8 +102,36 @@ padding:5%;
  .pricing-column{
      padding: 3% 2%;
  }
- #cta{
+ /* cta  */
+ #cta
+ {
      background-color:#ff4c68;
-     padding: 12% 0;
+     color: #fff;
+     font-family: "montserrat-black";
+     padding: 7% 15%;
      text-align: center;
+ }
+ .cta-heading{
+     font-family: "montserrat-black";
+     font-size: 3.5rem;
+     line-height: 1.5;
+ }
+ /* footer  */
+ #footer{
+     padding: 7% 15%;
+     text-align: center;
+ }
+ .social-icon{
+     margin: 20px 10px;
+ }
+ /* responsive */
+ @media (max-width:1028px) {
+     #title{
+         text-align: center;
+     }
+     .title-img{
+         position: static;
+         transform: rotate(-25deg);
+         padding: 20% 0;
+     }
  }
